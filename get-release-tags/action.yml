@@ -1,0 +1,19 @@
+name: Get release tags
+description: Gets the new tag and last tag
+
+inputs:
+  main_package:
+    description: Main package for release
+
+outputs:
+  from:
+    description: The from tag
+  to:
+    description: The to tag
+
+runs:
+  using: node12
+  main: main.js
+
+branding:
+  icon: label
