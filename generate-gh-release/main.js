@@ -1,5 +1,6 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
+const cp = require('child_process');
 const exec = cmd => cp.execSync(cmd).toString();
 
 const token = core.getInput("token", { required: true });
