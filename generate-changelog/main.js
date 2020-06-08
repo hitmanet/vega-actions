@@ -1,10 +1,8 @@
 
 const cp = require("child_process");
-cp.execSync(`cd ${__dirname}; npm ci`);
-
 const path = require("path");
 const core = require("@actions/core");
-const lernaChangelog = path.resolve(__dirname, "node_modules/@hitmanet808/lerna-changelog");
+const lernaChangelog = path.resolve("node_modules/@hitmanet808/lerna-changelog");
 
 const exec = cmd => cp.execSync(cmd).toString().trim();
 
