@@ -6,7 +6,7 @@ const tag = core.getInput("tag", { required: true });
 const changelog = core.getInput("changelog", { required: true });
 const [ repoOwner, repoName ] = process.env.GITHUB_REPOSITORY.split("/");
 
-const octokit = new github.GitHub(token);
+const octokit = github.getOctokit(token);
 
 octokit.repos.createRelease({
   owner: repoOwner,
