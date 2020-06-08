@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "name": "generate-gh-release",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.1.0",
+    "@actions/github": "^3.0.0"
+  }
+}
