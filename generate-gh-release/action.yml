@@ -5,6 +5,9 @@ inputs:
   tag:
     description: The tag name
     required: true
+  main_package:
+    description: Main package name
+    required: true
   changelog:
     description: The new changelog
     required: true
