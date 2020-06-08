@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "generate-changelog",
+  "name": "update-changelog",
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
