@@ -1,15 +1,15 @@
-name: Generate changelog
-description: Uses lerna-changelog to generate the changelog from a tag to another
+name: Get release tags
+description:
 
 inputs:
+  main_package:
+    description: Main project package
+
+outputs:
   from:
     description: Old tag
   to:
     description: New tag
-
-outputs:
-  changelog:
-    description: The new changelog, formatted as a JSON string
 
 runs:
   using: node12
