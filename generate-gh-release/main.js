@@ -8,6 +8,9 @@ const [ repoOwner, repoName ] = process.env.GITHUB_REPOSITORY.split("/");
 
 const octokit = github.getOctokit(token);
 
+console.log(tag)
+console.log(changelog)
+
 octokit.repos.createRelease({
   owner: repoOwner,
   repo: repoName,
