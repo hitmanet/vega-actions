@@ -3,7 +3,6 @@
   "workspaces": [
     "generate-changelog",
     "update-changelog",
-    "get-release-tags",
     "generate-gh-release"
   ],
   "devDependencies": {
