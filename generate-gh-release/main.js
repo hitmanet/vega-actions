@@ -20,6 +20,6 @@ octokit.repos.createRelease({
   owner: repoOwner,
   repo: repoName,
   tag_name: tag,
+  name: tag,
   body: JSON.parse(changelog),
-  draft: true,
 });
