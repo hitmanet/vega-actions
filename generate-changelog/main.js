@@ -8,6 +8,4 @@ exec('yarn');
 
 const changelog = exec(`yarn lerna-changelog`);
 
-console.log(changelog)
-
 core.setOutput("changelog", JSON.stringify(changelog));
